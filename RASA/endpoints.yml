@@ -1,0 +1,9 @@
+# Event broker which all conversation events should be streamed to.
+event_broker:
+  type: redis
+  url: localhost
+  port: 6379
+  db: 0
+  queues:
+    - queue-1
+  exchange_name: exchange

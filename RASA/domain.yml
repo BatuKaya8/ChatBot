@@ -1,0 +1,167 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - action_bot_challenge
+  - ask_product
+  - ask_payment
+  - ask_invoice
+  - ask_music
+  - ask_for_help
+  - offer_product
+  - good_offer_product
+  - payment_page
+  - detailed_invoice
+  - redirect_to_music_site
+  - redirect_to_customer_service
+  - action_sad_mood
+  - fizy_music_suggestion
+  - choosing_sad
+  - choosing_happy
+  - action_happy_mood
+  - action_trip
+  - rap_music
+  - turkish_rap_music
+  - yabanci_rap_music
+  - oldschool_rap_music
+  - play_random_song_fizy
+  - play_top_charts_fizy
+
+responses:
+  utter_greet:
+    - text: "Merhaba! Size nasıl yardımcı olabilirim?"
+    - text: "Merhaba! Turkcell Asistan'a hoş geldiniz. Size nasıl yardımcı olabilirim?"
+
+  utter_goodbye:
+    - text: "Görüşmek üzere! Başka bir şey için buradayım."
+    - text: "Görüşmek üzere! İyi günler dilerim."
+
+  utter_affirm:
+    - text: "Anladım, işlemi tamamlayacağım."
+    - text: "Harika, devam ediyoruz!"
+    - text: "Onaylandı, işlemi gerçekleştireceğim."
+
+  utter_deny:
+    - text: "Anladım, işlemi iptal ediyorum."
+    - text: "Tamam, başka bir şey arıyorsanız buradayım."
+    - text: "Anladım, başka bir şey yapmak ister misiniz?"
+
+  utter_mood_great:
+    - text: "Harika! İyi hissettiğinize sevindim."
+    - text: "Muhteşem! Daha iyi olamazdı."
+
+  utter_mood_unhappy:
+    - text: "Üzgünüm duydum. Size nasıl yardımcı olabilirim?"
+    - text: "Endişelenmeyin, size yardımcı olacağım."
+
+  utter_action_bot_challenge:
+    - text: "Evet, bir botum. Size nasıl yardımcı olabilirim?"
+    - text: "Evet, ben bir botum. Sormak istediğiniz bir şey var mı?"
+
+  utter_ask_product:
+    - text: "Ürün hakkında bir sorunuz var mı?"
+    - text: "Hangi ürünü arıyorsunuz?"
+
+  utter_ask_payment:
+    - text: "Ödeme konusunda size nasıl yardımcı olabilirim?"
+    - text: "Ödeme ile ilgili bir sorunuz var mı?"
+
+  utter_ask_invoice:
+    - text: "Fatura bilgilerinizde yardımcı olabilir miyim?"
+    - text: "Faturanızla ilgili bir sorunuz var mı?"
+
+  utter_ask_music:
+    - text: "Müzik dinlemek isterseniz, size Fizzy Müzik Uygulamasını önerebilirim."
+    - text: "Hangi tür müzik dinlemek istersiniz?"
+
+  utter_ask_for_help:
+    - text: "Üzgünüm, size yardımcı olamadık. Nasıl yardımcı olabiliriz?"
+    - text: "Nasıl yardımcı olabilirim? Lütfen bana sorunuz."
+
+  utter_offer_product:
+    - text: "Ürün satın almak isterseniz, size yardımcı olabilirim."
+    - text: "Giyim, elektronik, ev eşyaları ve daha fazlası! Size nasıl yardımcı olabilirim?"
+
+  utter_good_offer_product:
+    - text: "İşimizde en iyisiyiz"
+    - text: "Her zamanki gibi size hiztmek etmek için çalışıyoruz"
+
+  utter_payment_page:
+    - text: "Fatura ödeme sayfasına gitmek için linke tıklayabilirsiniz: [Fatura Ödeme Sayfası](https://www.faturapay.com)"
+    - text: "Fatura ödemeleriniz için buradayız. [Fatura Ödeme Sayfası](https://www.faturapay.com)"
+
+  utter_detailed_invoice:
+    - text: "Ayrıntılı fatura bilgileriniz aşağıdaki gibidir: [Fatura Detayları](https://www.faturadetail.com)"
+    - text: "İşte faturanızın ayrıntıları: [Fatura Detayları](https://www.faturadetail.com)"
+
+  utter_redirect_to_music_site:
+    - text: "Müzik dinlemek isterseniz, sizi Elma Müzik sitesine yönlendiriyorum. [Elma Müzik](https://www.elmamuzik.com)"
+    - text: "Müzik zamanı! [Elma Müzik](https://www.elmamuzik.com) adresine tıklayın."
+
+  utter_redirect_to_customer_service:
+    - text: "Müşteri hizmetlerine yönlendiriliyorsunuz. Size nasıl yardımcı olabiliriz?"
+    - text: "Müşteri hizmetleri ekibimiz sizin için burada. Size nasıl yardımcı olabiliriz?"
+
+  utter_fizy_music_suggestion:
+    - text: "Tabii ki, isterseniz güzel ve hareketli şarkılar önerebilirim (https://listen.fizy.com/en-yeni-listeler/playlist/69583479162/--/detay?Country=TR)"
+    - text: "Ne demek, size güzel arabesk şarkılarla dolu bir liste önericem(https://listen.fizy.com/en-yeni-listeler/playlist/204371284124/--/detay?Country=TR&deeplink=Playlist)"
+    - text: "Tabi ki hemen sizi fizy ye yönlendiriyorum aradığınız her şarkıyı bulabilceğinize emin olabilirsiniz.(https://listen.fizy.com/)"
+
+  utter_action_sad_mood:
+    - text: "İsterseniz modunuzu yükseltecek hareketli şarkılar çalabilirim yada sizin için güzel arabesk şarkılar önerebilirim?"
+
+  utter_choosing_sad:
+    - text: "Tabi ki size arabesk şarkılar öneriyorum(https://listen.fizy.com/en-yeni-listeler/playlist/204371284124/--/detay?Country=TR&deeplink=Playlist)"
+    - text: "Hemen size güzel ve yavaş şarkılar öneriyorum(https://listen.fizy.com/en-yeni-listeler/playlist/69368763242/--/detay?Country=TR)"
+    - text: "Size efkarlı şarkılar öneriyorum hemen(https://listen.fizy.com/en-yeni-listeler/playlist/158219877792/--/detay?Country=TR)"
+
+  utter_choosing_happy:
+    - text: "Tabii ki! Size neşeli şarkılar öneriyorum.(https://listen.fizy.com/en-yeni-listeler/playlist/153779214806/--/detay?Country=TR)"
+    - text: "Hemen enerjik şarkılar bulayım size!(https://listen.fizy.com/en-yeni-listeler/playlist/153779214806/--/detay?Country=TR)"
+    - text: "Güzel! Size mutluluk dolu şarkılar tavsiye ediyorum.(https://listen.fizy.com/en-yeni-listeler/playlist/153779214806/--/detay?Country=TR)"
+    - text: "Harika seçim! Sizi dans ettirecek şarkılar bulayım.(https://listen.fizy.com/en-yeni-listeler/playlist/153779214806/--/detay?Country=TR)"
+    - text: "İyi bir ruh hali için buradayım! Hadi neşeli bir şarkı listesi bulalım.(https://listen.fizy.com/)"
+    - text: "Mükemmel! Size canlandırıcı şarkılar öneriyorum.(https://listen.fizy.com/en-yeni-listeler/playlist/218050226729/--/detay?Country=TR)"
+
+  utter_action_happy_mood:
+    - text: "Bunu duyduğuma çok sevindim size hemen güzel ve hareketli şarkılar öneriyorum(https://listen.fizy.com/en-yeni-listeler/playlist/218050226729/--/detay?Country=TR)"
+    - text: "Sizin adınıza çok sevindim, enerji dolu ve modunuzu yükseltecek şakrılar öneriyorum(https://listen.fizy.com/en-yeni-listeler/playlist/153779214806/--/detay?Country=TR)"
+
+  utter_action_trip:
+    - text: "Tabii ki size yolda dinlemelik bir playlist önerisi yapıcam"
+    - text: "Bu yolculukta sizin modunuzu yükselticek ve yaşam enerjinizi artırıcak şarkılar önericem"
+    - text: "Tabii ki işte sizin için yolda dinlenmesi gerektiğini düşündüğüm şarkı listem"
+
+  utter_rap_music:
+    - text: "Tabii ki, ama önce hangi tür rap dinlemek istediğinizi öğrenmem gerekir"
+    - text: "Tabii, hangi tür rap seversiniz? Türkçe rap, Yabancı rap, OldSchool vb."
+
+  utter_turkish_rap_music:
+    - text: "Tabii ki, sana Türkçe güzel rapler önericeğim"
+    - text: "Tabii, sana çok sevdiğim bir çalma listesi önericem seviceğini düşünüyorum"
+
+  utter_yabanci_rap_music:
+    - text: "Tabii ki, yabancı rap listelerimden birini denemenizi isterim"
+    - text: "Tabii, bu yabancı rapler çok iyi dostum."
+    - text: "Beyaz Kanye West olarak sana güzel rapler önercem"
+
+  utter_oldschool_rap_music:
+    - text: "Tabii ki, zevkli bir adama benziyorsun sana hemen old school bir şeyler önericem"
+    - text: "Tabii, benimde zevkle dinlediğim bir çalma listesini önericem sana"
+
+  utter_play_random_song_fizy:
+    - text: "Tabii ki, size rastgele bir şarkı öneriyorum"
+    - text: "Tabii, işte rastgele bir şarkı"
+
+  utter_play_top_charts_fizy:
+    - text: "Tabii ki, fizydeki en popüler şakrılara yönlendiricem sizi"
+    - text: "Tabii, fizy' nin en popüler şakrılarına yönlendiriyorum"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

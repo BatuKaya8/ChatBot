@@ -1,0 +1,212 @@
+version: "3.1"
+
+stories:
+
+- story: greet and goodbye
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: affirm and deny
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_affirm
+  - intent: deny
+  - action: utter_deny
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: mood feedback
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_mood_great
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+
+- story: ask for help
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_for_help
+  - action: utter_ask_for_help
+
+- story: ask about product
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_product
+  - action: utter_ask_product
+
+- story: ask about payment
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_payment
+  - action: utter_ask_payment
+
+- story: ask about invoice
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_invoice
+  - action: utter_ask_invoice
+
+- story: ask about music
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_music
+  - action: utter_ask_music
+
+- story: offer product
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: offer_product
+  - action: utter_offer_product
+
+- story: good offer product
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: good_offer_product
+  - action: utter_good_offer_product
+
+- story: payment page
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: payment_page
+  - action: utter_payment_page
+
+- story: detailed invoice
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: detailed_invoice
+  - action: utter_detailed_invoice
+
+- story: redirect to music site
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: redirect_to_music_site
+  - action: utter_redirect_to_music_site
+
+- story: redirect to customer service
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: redirect_to_customer_service
+  - action: utter_redirect_to_customer_service
+
+- story: bot challenge
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: action_bot_challenge
+  - action: utter_action_bot_challenge
+
+- story: unrecognized input
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_mood_great
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+  - intent: ask_for_help
+  - action: utter_ask_for_help
+
+- story: fizy music suggestion
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: fizy_music_suggestion
+    - action: utter_fizy_music_suggestion
+
+- story: fizy sad mood
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: action_sad_mood
+    - action: utter_action_sad_mood
+
+- story: choosing sad
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: action_sad_mood
+    - action: utter_action_sad_mood
+    - intent: choosing_sad
+    - action: utter_choosing_sad
+
+- story: choosing happy
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: action_sad_mood
+    - action: utter_action_sad_mood
+    - intent: choosing_happy
+    - action: utter_choosing_happy
+
+- story: action happy mood
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: action_happy_mood
+    - action: utter_action_happy_mood
+
+- story: action rap music
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: rap_music
+    - action: utter_rap_music
+
+- story: action turkish rap music
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: rap_music
+    - action: utter_rap_music
+    - intent: turkish_rap_music
+    - action: utter_turkish_rap_music
+
+- story: action yabanci rap music
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: rap_music
+    - action: utter_rap_music
+    - intent: yabanci_rap_music
+    - action: utter_yabanci_rap_music
+
+- story: action old school rap music
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: rap_music
+    - action: utter_rap_music
+    - intent: oldschool_rap_music
+    - action: utter_oldschool_rap_music
+
+- story: play random song fizy
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: play_random_song_fizy
+    - action: utter_play_random_song_fizy
+
+- story: play top charts fizy
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: play_top_charts_fizy
+    - action: utter_play_top_charts_fizy

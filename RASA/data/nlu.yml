@@ -1,0 +1,254 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Merhaba
+    - Selam
+    - Hey
+    - Nasılsınız?
+    - İyi günler
+    - Mrb
+    - Naber
+    - Günaydın
+    - Merhaba Dünya
+    - Ne var ne yok?
+
+- intent: goodbye
+  examples: |
+    - Hoşça kal
+    - Görüşürüz
+    - İyi günler
+    - Güle güle
+    - Sağlıcakla kal
+    - Kendine iyi bak
+    - Kendine dikkat et
+    - Birdaha bekleriz :)
+    - Umarım yardımcı olabilmişimdir
+
+- intent: affirm
+  examples: |
+    - Evet
+    - Tamam
+    - Kesinlikle
+    - Tabii ki
+    - Katılıyorum
+    - Haklısın
+    - Ok
+    - Okey
+    - Evt
+
+- intent: deny
+  examples: |
+    - Hayır
+    - İstemiyorum
+    - Reddediyorum
+    - Kesinlikle hayır
+    - Olmaz
+    - Katılmıyorum
+    - Yok
+    - Yanlış anladın
+    - Yanlışsın
+    - Canım istemiyor
+    - Teklifi reddediyorum
+    - Farklı bir şey deneyelim mi?
+    - Ben istediğim bu değil
+    - Farklı bir seçenek arıyorum
+
+- intent: mood_great
+  examples: |
+    - Harika
+    - Mükemmel
+    - Çok iyi
+    - Süper
+    - Her şey çok güzel
+    - Dört dörtlük
+    - Bayıldım
+    - Güzel
+
+- intent: mood_unhappy
+  examples: |
+    - Kötü
+    - Üzgünüm
+    - Berbat
+    - Çok kötü
+    - iğrenç
+    - Rezil
+    - Rezalet
+    - Daha iyisi olabilir
+    - Daha kötü olamazdı
+    - İyileştirilebilir
+
+- intent: action_bot_challenge
+  examples: |
+    - Sen bir bot musun?
+    - İnsan mısın?
+    - Bot musun yoksa insan mı?
+    - Bir insanla mı konuşuyorum?
+    - Adın ne?
+    - Kimsin sen?
+    - Ne işe yarıyosun
+    - Neler yapabilirsin
+
+- intent: ask_product
+  examples: |
+    - Bir ürün hakkında bilgi alabilir miyim?
+    - Hangi ürünleri satıyorsunuz?
+    - Bir ürün satın almak istiyorum.
+    - Ne gibi ürünleriniz var
+    - Neler satıyorsunuz
+    - Ne alabilirim
+
+- intent: ask_payment
+  examples: |
+    - Ödeme nasıl yapılır?
+    - Hangi ödeme yöntemlerini kabul ediyorsunuz?
+    - Faturayı nasıl ödeyebilirim?
+    - Ödeme fırsatlarınız var mı?
+    - Ödeme türleriniz nelerdir
+
+- intent: ask_invoice
+  examples: |
+    - Fatura detaylarını görebilir miyim?
+    - Faturamı nasıl görebilirim?
+    - Geçmiş faturalarımı nasıl bulabilirim?
+    - Fatura bilgilerimi verir misiniz?
+    - Faturam hakkında detay verir misiniz?
+
+- intent: ask_music
+  examples: |
+    - Müzik dinlemek istiyorum
+    - Hangi tür müzikleri dinleyebilirim?
+    - Müzik önerisi yapar mısınız?
+    - Nasıl müzikler önerirsin?
+
+- intent: ask_for_help
+  examples: |
+    - Yardım alabilir miyim?
+    - Yardıma ihtiyacım var
+    - Nasıl yardımcı olabilirsiniz?
+    - Destek lazım
+    - Yardım et
+    - Nasıl
+
+- intent: offer_product
+  examples: |
+    - Ürünlerinizi görebilir miyim?
+    - Satışta olan ürünler nelerdir?
+    - Bir ürün satın almak istiyorum.
+
+- intent: good_offer_product
+  examples: |
+    - Ürünlerinizi çok beğendim
+    - Ürünlerinize bayıldım
+    - İşinizde gayet iyisiniz
+
+- intent: payment_page
+  examples: |
+    - Ödeme sayfasına nasıl ulaşabilirim?
+    - Faturamı ödemek için ne yapmalıyım?
+    - Ödeme yapmak istiyorum.
+
+- intent: detailed_invoice
+  examples: |
+    - Fatura detaylarını görebilir miyim?
+    - Faturamın ayrıntılarını öğrenmek istiyorum.
+    - Faturamın detaylarını nasıl görebilirim?
+
+- intent: redirect_to_music_site
+  examples: |
+    - Müzik dinleme sitesine gitmek istiyorum.
+    - Hangi müzik sitesine gidebilirim?
+    - Müzik dinlemek için bir site önerebilir misiniz?
+
+- intent: redirect_to_customer_service
+  examples: |
+    - Müşteri hizmetlerine nasıl ulaşabilirim?
+    - Sorularımı sorabileceğim bir destek hattı var mı?
+    - Müşteri hizmetlerine yönlendirin.
+
+- intent: fizy_music_suggestion
+  examples: |
+    - Bana müzik önerir misin?
+    - Ne tür müzikler önerirsin?
+    - Çal kemancı
+    - Haydi bana bir şarkı öner 
+
+- intent: action_sad_mood
+  examples: |
+    - Bugün efkarlı hissediyorum ne tür şarkılar önerirsin?
+    - Kendimi kötü hissediyorum bana şarkı önerir misin?
+    - Bir yakınımı kaybettim bana şarkı önerebilir misin?
+    - Sevgilimden ayrıldım bana şarkı önerir misin?
+
+- intent: choosing_sad
+  examples: |
+    - Hüzünlü şarkılar olsun
+    - Efkarlı şarkılar olsun
+    - Mümkünse yavaş şarkılar olsun
+    - Arabesk şarkıları tercih ederim
+
+- intent: choosing_happy
+  examples: |
+    - Mutlu şarkılar olsun
+    - Neşeli şarkılar olsun
+    - Enerjik şarkılar olsun
+    - Dans şarkıları tercih ederim
+    - Bugün keyifli bir gün geçirmek istiyorum, enerjik şarkılar çalabilir misiniz?
+    - Hayat dolu şarkılar olsun, ruhumu yükseltecek bir liste istiyorum.
+    - Parti havası yaratacak, dans ettirecek şarkılar çalmak istiyorum.
+    - İyi hissettirecek, neşeli melodiler arıyorum.
+    - Sevdiklerimle birlikte olacağım bir gün için mutlu ve hareketli şarkılar dinlemek istiyorum.
+
+- intent: action_happy_mood
+  examples: |
+    - Günüm çok güzel geçiyor, neşeli şarkılarla daha da renklendirmek istiyorum.
+    - Bugün pozitif enerjiyle doluyum, bana enerjik şarkılar önerebilir misin?
+    - Sevdiklerimle vakit geçirmenin mutluluğunu yaşıyorum, şimdi dans etmek istiyorum. Hangi şarkılar önerirsin?
+    - Bugün neşeliyim, enerji doluyum. Bana neşeli şarkılar önerebilir misin?
+    - Hava güzel ve ruh halim harika. Sence hangi şarkılar beni daha da mutlu eder?
+    - Bugün çok mutluyum, ne tür şarkılar önerirsin?
+    - Harika hissediyorum, bana neşeli şarkılar önerebilir misin?
+
+- intent: action_trip
+  examples: |
+    - Uzun bir yola gidiyorum bana tam yolda dinlemelik şarkılar önerir misin?
+    - Yolculuğa çıktım bana bir kaç tane uzun yol şarkısı önerir misin?
+    - Trafikte takılı kaldım bana beni rahatlatıcak şarkılar önerebilir misin?
+    - Uzun bir bisiklet yolculuğuna çıktım bana şarkı önerebilir misin?
+
+- intent: rap_music
+  examples: |
+    - Bana rap şarkılar önerir misin?
+    - Rap dinlemeyi çok severim bana şarkı öner
+    - My man bana bir kaç rap öner
+
+- intent: turkish_rap_music
+  examples: |
+    - Türkçe rap tercih ederim
+    - Türkçe rap daha iyi olur
+    - Türkçe Rap
+
+- intent: yabanci_rap_music
+  examples: |
+    - Yabancı rap isterim
+    - Yabancı rap daha iyi olur
+    - Yabancı
+
+- intent: oldschool_rap_music
+  examples: |
+    - Old school dinlemek istiyorum
+    - Old school tercih ederim
+    - Old school
+
+- intent: play_random_song_fizy
+  examples: |
+    - Rastgele bir şarkı çal
+    - Fizy'de rastgele bir şarkı çal
+    - Fizy'den bir şarkı çal
+
+- intent: play_top_charts_fizy
+  examples: |
+    - Fizy'deki en popüler şarkıları çal
+    - En çok dinlenen şarkıları Fizy'den çal
+    - Fizy'deki hit şarkıları çal
