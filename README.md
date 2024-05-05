@@ -9,7 +9,7 @@ This project consists of RASA files aimed at developing the Turkcell Assistant u
 ```
 pip install rasa
 ```
-4. Clone or download this repository and copy the provided folder into your Python project directory.
+3. Clone or download this repository and copy the provided folder into your Python project directory.
 
 ## Usage
 To train and interact with the Turkcell Assistant, follow these steps:
@@ -18,11 +18,11 @@ To train and interact with the Turkcell Assistant, follow these steps:
 ```
 rasa train nlu
 ```
-4. Train the core model:
+3. Train the core model:
 ```
 rasa train
 ```
-6. Start the shell to chat with the Turkcell Assistant:
+4. Start the shell to chat with the Turkcell Assistant:
 ```
 rasa shell
 ```
