@@ -6,18 +6,18 @@ This project consists of RASA files aimed at developing the Turkcell Assistant u
 ## Installation
 1. Create a new Python project.
 2. Install RASA by running the following command in the terminal:
-pip install rasa
+**pip install rasa**
 3. Clone or download this repository and copy the provided folder into your Python project directory.
 
 ## Usage
 To train and interact with the Turkcell Assistant, follow these steps:
 1. Open a terminal and navigate to your Python project directory.
 2. Train the NLU (Natural Language Understanding) model:
-rasa train nlu
+**rasa train nlu**
 3. Train the core model:
-rasa train
+**rasa train**
 4. Start the shell to chat with the Turkcell Assistant:
-rasa shell
+**rasa shell**
 
 ## Contributing
 Contributions to this project are welcome! If you'd like to contribute, please follow these steps:
