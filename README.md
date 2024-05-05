@@ -6,7 +6,7 @@ This project consists of RASA files aimed at developing the Turkcell Assistant u
 ## Installation
 1. Create a new Python project.
 2. Install RASA by running the following command in the terminal:
-**pip install rasa**
+'''**pip install rasa**'''
 3. Clone or download this repository and copy the provided folder into your Python project directory.
 
 ## Usage
