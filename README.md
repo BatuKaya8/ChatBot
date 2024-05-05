@@ -1,3 +1,7 @@
-This project was created by SEBİL.
-We made this project to develop the Turkcell assistant, and the project does not have any interface; it is just a code sample, and it still needs to be developed.
-We used the RASA library in this project and aimed to contribute to the Turkcell assistant by using AI and machine learning.
+# "Turkcell Asistan" Chatbot Project
+
+## Overview
+This project aims to develop the Turkcell Assistant using RASA. It was created by SeBil to enhance the functionality and intelligence of the Turkcell Assistant. Please note that this project is currently in the development phase and does not have a graphical interface; it is solely a code sample that requires further UI development.
+
+## Installation
+1. Clone the repository to your local machine:
