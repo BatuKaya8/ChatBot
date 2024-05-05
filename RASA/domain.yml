@@ -32,6 +32,7 @@ intents:
   - play_random_song_fizy
   - play_top_charts_fizy
   - predicted_intent
+  - pasaj_info
 
 responses:
   utter_greet:
@@ -77,12 +78,16 @@ responses:
     - text: "Faturanızla ilgili bir sorunuz var mı?"
 
   utter_ask_music:
-    - text: "Müzik dinlemek isterseniz, size Fizzy Müzik Uygulamasını önerebilirim."
-    - text: "Hangi tür müzik dinlemek istersiniz?"
+    - text: "Müzik dinlemek isterseniz, size Fizy Müzik Uygulamasını önerebilirim."
+    - text: "Fizy uygulamamızda arayabilceğiniz tüm müzikleri bulabilirsiniz sizi hemen yönlendiriyorum (https://fizy.com/) "
+    - text: "Fizy Turkcell'in müzik ve podcast uygulamasıdır milyonlarca parça ve podcast bulabilirsiniz (https://fizy.com/)"
+    - text: "Fizy keyifli bir deneyim yaşamanız için gerekli olan tüm özelliklere sahip bir müzik ve podcast uygulamasıdır (https://fizy.com/)"
 
   utter_ask_for_help:
     - text: "Üzgünüm, size yardımcı olamadık. Nasıl yardımcı olabiliriz?"
     - text: "Nasıl yardımcı olabilirim? Lütfen bana sorunuz."
+    - text: "İsterseniz sizi müşteri hizmetlerine yönlendirebilirim"
+    - text: "Müşteri hizmetleri ve ben her daim sizin için aktifiz bir probleminiz olduğunda Turkcell ekibi olarak yanınızdayız"
 
   utter_offer_product:
     - text: "Ürün satın almak isterseniz, size yardımcı olabilirim."
@@ -103,8 +108,8 @@ responses:
     - text: "İşte faturanızın ayrıntıları: [Fatura Detayları](https://www.faturadetail.com)"
 
   utter_redirect_to_music_site:
-    - text: "Müzik dinlemek isterseniz, sizi Elma Müzik sitesine yönlendiriyorum. [Elma Müzik](https://www.elmamuzik.com)"
-    - text: "Müzik zamanı! [Elma Müzik](https://www.elmamuzik.com) adresine tıklayın."
+    - text: "Müzik dinlemek isterseniz, sizi Fizy Müzik sitesine yönlendiriyorum. [Elma Müzik](https://www.elmamuzik.com)"
+    - text: "Müzik zamanı! Fizy (https://fizy.com/) adresine tıklayın."
 
   utter_redirect_to_customer_service:
     - text: "Müşteri hizmetlerine yönlendiriliyorsunuz. Size nasıl yardımcı olabiliriz?"
@@ -165,6 +170,13 @@ responses:
     - text: "Tabii ki, fizy'deki en popüler şarkılara yönlendiricem sizi."
     - text: "Tabii, fizy'nin en popüler şarkılarına yönlendiriyorum."
 
+  utter_pasaj_info:
+    - text: "Sizi pasaja yönlendiriyorum, pasaj Turkcell'in alış-veriş imkanı sunan sanal mağzasıdır."
+    - text: "Ürünlerimizin bulunduğu yer Turkcell Pasaj'dır. Pasaj alış-veriş yapma imkanı sunan uygun ve kaliteli ürünler sunan bir sanal mağzadır"
+    - text: "Pasaj Turkcell'in sanal alışveriş merkezidir ve tüm ürünlerimiz orda sizi oraya yönlendirebilirim"
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+#SEBİL TARAFINDAN YAPILDI

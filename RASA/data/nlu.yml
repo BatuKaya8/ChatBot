@@ -16,6 +16,7 @@ nlu:
     - Günaydın
     - Merhaba Dünya
     - Ne var ne yok?
+    - Turkcell
 
 - intent: goodbye
   examples: |
@@ -143,6 +144,8 @@ nlu:
     - Hangi tür müzikleri dinleyebilirim?
     - Müzik önerisi yapar mısınız?
     - Nasıl müzikler önerirsin?
+    - Beni müzik uygulamanıza yönlendir
+    - Müzik uygulamanız var mı?
 
 - intent: ask_for_help
   examples: |
@@ -285,3 +288,12 @@ nlu:
     - Tahmin edilen niyet
     - Tahmin edilen etiket
     - Botun tahmini
+
+- intent: pasaj_info
+  examples: |
+    - Ürünlerinizi nerden satıyorsunuz?
+    - Pasaj nedir
+    - Ürünleri nerden bulabilirim
+    - Ürünlerinize nerden ulaşabilirim
+
+#SEBİL TARAFINDAN YAPILDI

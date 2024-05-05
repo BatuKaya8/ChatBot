@@ -15,3 +15,5 @@ rules:
   steps:
   - intent: action_bot_challenge
   - action: utter_action_bot_challenge
+
+#SEBİL TARAFINDAN YAPILDI

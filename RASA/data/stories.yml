@@ -238,3 +238,12 @@ stories:
   - action: utter_ask_music
   - intent: redirect_to_music_site
   - action: utter_redirect_to_music_site
+
+- story: pasaj info
+  steps:
+  - intent: pasaj_info
+  - action: utter_pasaj_info
+  - intent: ask_product
+  - action: utter_ask_product
+
+#SEBİL TARAFINDAN YAPILDI😮

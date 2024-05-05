@@ -302,3 +302,15 @@ class ActionPredictedIntent(Action):
         predicted_intent = tracker.latest_message['intent'].get('name')
         dispatcher.utter_message(text=f"Tahmin edilen niyet: {predicted_intent}")
         return []
+
+class ActionPredictedIntent(Action):
+    def name(self) -> Text:
+        return "pasaj_info"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text="Sizi pasaja yönlendiriyorum, pasaj Turkcell'in alış-veriş imkanı sunan sanal mağzasıdır.")
+        return []
+
+#SEBİL TARAFINDAN YAPILDI😮
