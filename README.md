@@ -28,7 +28,8 @@ rasa shell
 ```
 ## Note
 Because of the way the code is written, training the model can take a while and the model file size can be huge. Please be patient in this process.
-Adjusting the `epochs` parameters in the `config.yml` can significantly impact training time. By reducing the value of epochs, you can decrease the number of training iterations, thus reducing the overall time required for training.
+
+Adjusting the `epochs` parameters in the `config.yml` file can significantly impact training time. By reducing the value of `epochs`, you can decrease the number of training iterations, thus reducing the overall time required for training.
 
 
 ## Contributing
