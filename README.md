@@ -26,6 +26,9 @@ rasa train
 ```
 rasa shell
 ```
+## Note:
+Because of some decisions made in the code, training the model can take a while and the model file size can be huge. Please be patient in this process.
+
 
 ## Contributing
 Contributions to this project are welcome! If you'd like to contribute, please follow these steps:
