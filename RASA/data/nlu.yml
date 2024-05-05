@@ -3,6 +3,9 @@ version: "3.1"
 nlu:
 - intent: greet
   examples: |
+    - Samimi bir merhaba! Size nasıl yardımcı olabilirim?
+    - Hey! Nasıl gidiyor? Size yardımcı olabileceğim bir şey var mı?
+    - Selam! Sitede dolaşırken takıldınız mı? Yardımcı olmak için buradayım!
     - Merhaba
     - Selam
     - Hey
@@ -16,6 +19,9 @@ nlu:
 
 - intent: goodbye
   examples: |
+    - Hoşça kalın! Tekrar görüşmek üzere!
+    - Güle güle! Bir sonraki ziyaretinizde tekrar bekleriz!
+    - Kendinize iyi bakın! İhtiyacınız olursa her zaman buradayız!
     - Hoşça kal
     - Görüşürüz
     - İyi günler
@@ -28,6 +34,9 @@ nlu:
 
 - intent: affirm
   examples: |
+    - Tabii ki! Size nasıl yardımcı olabilirim?
+    - Evet, elbette! Ne hakkında konuşmak istersiniz?
+    - Kesinlikle! Size yardımcı olmak için buradayım!
     - Evet
     - Tamam
     - Kesinlikle
@@ -40,6 +49,9 @@ nlu:
 
 - intent: deny
   examples: |
+    - Maalesef hayır, başka bir şey denemek ister misiniz?
+    - Üzgünüm, bu teklifi kabul edemem. Başka bir sorunuz var mı?
+    - Hayır, teklifi reddetmek zorundayım. Farklı bir seçenek arıyorsanız yardımcı olabilirim.
     - Hayır
     - İstemiyorum
     - Reddediyorum
@@ -57,6 +69,9 @@ nlu:
 
 - intent: mood_great
   examples: |
+    - Harika hissettiğinize sevindim! Size nasıl yardımcı olabilirim?
+    - Mükemmel! Bir şeyler için mi arıyorsunuz veya sadece dolaşıyorsunuz?
+    - Süper! Bugün size nasıl yardımcı olabilirim?
     - Harika
     - Mükemmel
     - Çok iyi
@@ -68,11 +83,14 @@ nlu:
 
 - intent: mood_unhappy
   examples: |
+    - Üzgün görünüyorsunuz, yardımcı olabileceğim bir şey var mı?
+    - Eğer bir şeyler sizi üzmüşse, konuşmak isterseniz buradayım.
+    - Kötü hissettiğinizi anlıyorum. Size nasıl yardımcı olabilirim?
     - Kötü
     - Üzgünüm
     - Berbat
     - Çok kötü
-    - iğrenç
+    - İğrenç
     - Rezil
     - Rezalet
     - Daha iyisi olabilir
@@ -87,17 +105,21 @@ nlu:
     - Bir insanla mı konuşuyorum?
     - Adın ne?
     - Kimsin sen?
-    - Ne işe yarıyosun
-    - Neler yapabilirsin
+    - Ne işe yarıyosun?
+    - Neler yapabilirsin?
 
 - intent: ask_product
   examples: |
     - Bir ürün hakkında bilgi alabilir miyim?
     - Hangi ürünleri satıyorsunuz?
     - Bir ürün satın almak istiyorum.
-    - Ne gibi ürünleriniz var
-    - Neler satıyorsunuz
-    - Ne alabilirim
+    - Ne gibi ürünleriniz var?
+    - Neler satıyorsunuz?
+    - Ne alabilirim?
+    - Sitenizdeki ürünler nelerdir?
+    - Hangi ürünleri satıyorsunuz?
+    - Bir ürün hakkında bilgi alabilir miyim?
+    - Ürünleriniz hakkında bilgi verir misiniz?
 
 - intent: ask_payment
   examples: |
@@ -136,12 +158,17 @@ nlu:
     - Ürünlerinizi görebilir miyim?
     - Satışta olan ürünler nelerdir?
     - Bir ürün satın almak istiyorum.
+    - Hangi ürünleri önerirsiniz?
+    - Bana uygun ürünleriniz var mı?
+    - İndirimde ürünleriniz var mı? 
+    - Ne gibi ürünler önerebilirsiniz
+    - Ürünlerinizden bana bir kaç öneri yapar mısınız?
 
 - intent: good_offer_product
   examples: |
-    - Ürünlerinizi çok beğendim
-    - Ürünlerinize bayıldım
-    - İşinizde gayet iyisiniz
+    - Ürünlerinizi çok beğendim!
+    - Ürünlerinize bayıldım!
+    - İşinizde gayet iyisiniz!
 
 - intent: payment_page
   examples: |
@@ -252,3 +279,9 @@ nlu:
     - Fizy'deki en popüler şarkıları çal
     - En çok dinlenen şarkıları Fizy'den çal
     - Fizy'deki hit şarkıları çal
+
+- intent: predicted_intent
+  examples: |
+    - Tahmin edilen niyet
+    - Tahmin edilen etiket
+    - Botun tahmini

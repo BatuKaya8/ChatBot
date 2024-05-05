@@ -1,31 +1,3 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/custom-actions
-
-
-# This is a simple example for a custom action which utters "Hello World!"
-
-# from typing import Any, Text, Dict, List
-#
-# from rasa_sdk import Action, Tracker
-# from rasa_sdk.executor import CollectingDispatcher
-#
-#
-# class ActionHelloWorld(Action):
-#
-#     def name(self) -> Text:
-#         return "action_hello_world"
-#
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#
-#         dispatcher.utter_message(text="Hello World!")
-#
-#         return []
-
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
@@ -160,16 +132,6 @@ class ActionOfferProduct(Action):
         dispatcher.utter_message(text="Ürün satın almak isterseniz, size yardımcı olabilirim.")
         return []
 
-class ActionGoodOfferProduct(Action):
-    def name(self) -> Text:
-        return "action_good_offer_product"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(text="Ürünlerinizi çok beğendim.")
-        return []
-
 class ActionPaymentPage(Action):
     def name(self) -> Text:
         return "action_payment_page"
@@ -197,11 +159,7 @@ class ActionRedirectToMusicSite(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        mod = tracker.get_slot("mod")
-        if mod == "unhappy":
-            dispatcher.utter_message(text="Üzgünüm duydum. Size nasıl yardımcı olabilirim?")
-        else:
-            dispatcher.utter_message(text="Müzik dinlemek isterseniz, sizi Elma Müzik sitesine yönlendiriyorum. [Elma Müzik](https://www.elmamuzik.com)")
+        dispatcher.utter_message(text="Müzik dinlemek isterseniz, sizi Elma Müzik sitesine yönlendiriyorum. [Elma Müzik](https://www.elmamuzik.com)")
         return []
 
 class ActionRedirectToCustomerService(Action):
@@ -231,8 +189,7 @@ class ActionFizySuggestion(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(
-            text="Tabii ki, isterseniz güzel ve hareketli şarkılar önerebilirim")
+        dispatcher.utter_message(text="Tabii ki, isterseniz güzel ve hareketli şarkılar önerebilirim")
         return []
 
 class ChoosingSad(Action):
@@ -242,8 +199,7 @@ class ChoosingSad(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(
-            text="Tabi ki size arabesk şarkılar öneriyorum")
+        dispatcher.utter_message(text="Tabi ki size arabesk şarkılar öneriyorum")
         return []
 
 class ChoosingHappy(Action):
@@ -253,8 +209,7 @@ class ChoosingHappy(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(
-            text="Tabii ki! Size neşeli şarkılar öneriyorum.")
+        dispatcher.utter_message(text="Tabii ki! Size neşeli şarkılar öneriyorum.")
         return []
 
 class ActionHappyMod(Action):
@@ -264,8 +219,7 @@ class ActionHappyMod(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(
-            text="Bunu duyduğuma çok sevindim size hemen güzel ve hareketli şarkılar öneriyorum")
+        dispatcher.utter_message(text="Bunu duyduğuma çok sevindim size hemen güzel ve hareketli şarkılar öneriyorum")
         return []
 
 class ActionTrip(Action):
@@ -275,8 +229,7 @@ class ActionTrip(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(
-            text="Tabii ki size yolda dinlemelik bir playlist önerisi yapıcam")
+        dispatcher.utter_message(text="Tabii ki size yolda dinlemelik bir playlist önerisi yapıcam")
         return []
 
 class RapMusic(Action):
@@ -286,8 +239,7 @@ class RapMusic(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(
-            text="Tabii ki, ama önce hangi tür rap dinlemek istediğinizi öğrenmem gerekir")
+        dispatcher.utter_message(text="Tabii ki, ama önce hangi tür rap dinlemek istediğinizi öğrenmem gerekir")
         return []
 
 class TurkishRap(Action):
@@ -297,8 +249,7 @@ class TurkishRap(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(
-            text="Tabii ki, sana Türkçe güzel rapler önercem hem yeni hem eski tarzdan")
+        dispatcher.utter_message(text="Tabii ki, sana Türkçe güzel rapler önercem hem yeni hem eski tarzdan")
         return []
 
 class YabanciRap(Action):
@@ -308,8 +259,7 @@ class YabanciRap(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(
-            text="Tabii ki, yabancı rap listelerimden birini denemenizi isterim")
+        dispatcher.utter_message(text="Tabii ki, yabancı rap listelerimden birini denemenizi isterim")
         return []
 
 class OldSchoolRap(Action):
@@ -319,8 +269,7 @@ class OldSchoolRap(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(
-            text="Tabii ki, zevkli bir adama benziyorsun sana hemen old school bir şeyler önericem")
+        dispatcher.utter_message(text="Tabii ki, zevkli bir adama benziyorsun sana hemen old school bir şeyler önericem")
         return []
 
 class PlayRandomSong(Action):
@@ -330,8 +279,7 @@ class PlayRandomSong(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(
-            text="Tabii ki, size rastgele bir şarkı öneriyorum")
+        dispatcher.utter_message(text="Tabii ki, size rastgele bir şarkı öneriyorum")
         return []
 
 class PlayTopCharts(Action):
@@ -341,6 +289,16 @@ class PlayTopCharts(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(
-            text="Tabii ki, fizydeki en popüler şakrılara yönlendiricem sizi")
+        dispatcher.utter_message(text="Tabii ki, fizydeki en popüler şakrılara yönlendiricem sizi")
+        return []
+
+class ActionPredictedIntent(Action):
+    def name(self) -> Text:
+        return "action_predicted_intent"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        predicted_intent = tracker.latest_message['intent'].get('name')
+        dispatcher.utter_message(text=f"Tahmin edilen niyet: {predicted_intent}")
         return []

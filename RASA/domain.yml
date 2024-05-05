@@ -31,6 +31,7 @@ intents:
   - oldschool_rap_music
   - play_random_song_fizy
   - play_top_charts_fizy
+  - predicted_intent
 
 responses:
   utter_greet:
@@ -86,10 +87,12 @@ responses:
   utter_offer_product:
     - text: "Ürün satın almak isterseniz, size yardımcı olabilirim."
     - text: "Giyim, elektronik, ev eşyaları ve daha fazlası! Size nasıl yardımcı olabilirim?"
+    - text: "Kaliteli ve uygun ürünlerimizle size güzel bir hizmet deneyimi bırakmak istiyoruz sizi pasaja yönlendiriyorum (https://www.turkcell.com.tr/pasaj)"
+    - text: "Siz değerli müşterilerimize her zaman güzel ürünler önermek için buradayım, tabii ki de (https://www.turkcell.com.tr/pasaj)"
 
   utter_good_offer_product:
-    - text: "İşimizde en iyisiyiz"
-    - text: "Her zamanki gibi size hiztmek etmek için çalışıyoruz"
+    - text: "İşimizde en iyisiyiz:D"
+    - text: "Her zamanki gibi size hizmet etmek için çalışıyoruz."
 
   utter_payment_page:
     - text: "Fatura ödeme sayfasına gitmek için linke tıklayabilirsiniz: [Fatura Ödeme Sayfası](https://www.faturapay.com)"
@@ -109,58 +112,58 @@ responses:
 
   utter_fizy_music_suggestion:
     - text: "Tabii ki, isterseniz güzel ve hareketli şarkılar önerebilirim (https://listen.fizy.com/en-yeni-listeler/playlist/69583479162/--/detay?Country=TR)"
-    - text: "Ne demek, size güzel arabesk şarkılarla dolu bir liste önericem(https://listen.fizy.com/en-yeni-listeler/playlist/204371284124/--/detay?Country=TR&deeplink=Playlist)"
-    - text: "Tabi ki hemen sizi fizy ye yönlendiriyorum aradığınız her şarkıyı bulabilceğinize emin olabilirsiniz.(https://listen.fizy.com/)"
+    - text: "Ne demek, size güzel arabesk şarkılarla dolu bir liste önericem (https://listen.fizy.com/en-yeni-listeler/playlist/204371284124/--/detay?Country=TR&deeplink=Playlist)"
+    - text: "Tabii ki, hemen sizi fizy'ye yönlendiriyorum, aradığınız her şarkıyı bulabileceğinize emin olabilirsiniz (https://listen.fizy.com/)"
 
   utter_action_sad_mood:
-    - text: "İsterseniz modunuzu yükseltecek hareketli şarkılar çalabilirim yada sizin için güzel arabesk şarkılar önerebilirim?"
+    - text: "İsterseniz modunuzu yükseltecek hareketli şarkılar çalabilirim ya da sizin için güzel arabesk şarkılar önerebilirim?"
 
   utter_choosing_sad:
-    - text: "Tabi ki size arabesk şarkılar öneriyorum(https://listen.fizy.com/en-yeni-listeler/playlist/204371284124/--/detay?Country=TR&deeplink=Playlist)"
-    - text: "Hemen size güzel ve yavaş şarkılar öneriyorum(https://listen.fizy.com/en-yeni-listeler/playlist/69368763242/--/detay?Country=TR)"
-    - text: "Size efkarlı şarkılar öneriyorum hemen(https://listen.fizy.com/en-yeni-listeler/playlist/158219877792/--/detay?Country=TR)"
+    - text: "Tabii ki size arabesk şarkılar öneriyorum (https://listen.fizy.com/en-yeni-listeler/playlist/204371284124/--/detay?Country=TR&deeplink=Playlist)"
+    - text: "Hemen size güzel ve yavaş şarkılar öneriyorum (https://listen.fizy.com/en-yeni-listeler/playlist/69368763242/--/detay?Country=TR)"
+    - text: "Size efkarlı şarkılar öneriyorum hemen (https://listen.fizy.com/en-yeni-listeler/playlist/158219877792/--/detay?Country=TR)"
 
   utter_choosing_happy:
-    - text: "Tabii ki! Size neşeli şarkılar öneriyorum.(https://listen.fizy.com/en-yeni-listeler/playlist/153779214806/--/detay?Country=TR)"
-    - text: "Hemen enerjik şarkılar bulayım size!(https://listen.fizy.com/en-yeni-listeler/playlist/153779214806/--/detay?Country=TR)"
-    - text: "Güzel! Size mutluluk dolu şarkılar tavsiye ediyorum.(https://listen.fizy.com/en-yeni-listeler/playlist/153779214806/--/detay?Country=TR)"
-    - text: "Harika seçim! Sizi dans ettirecek şarkılar bulayım.(https://listen.fizy.com/en-yeni-listeler/playlist/153779214806/--/detay?Country=TR)"
-    - text: "İyi bir ruh hali için buradayım! Hadi neşeli bir şarkı listesi bulalım.(https://listen.fizy.com/)"
-    - text: "Mükemmel! Size canlandırıcı şarkılar öneriyorum.(https://listen.fizy.com/en-yeni-listeler/playlist/218050226729/--/detay?Country=TR)"
+    - text: "Tabii ki! Size neşeli şarkılar öneriyorum. (https://listen.fizy.com/en-yeni-listeler/playlist/153779214806/--/detay?Country=TR)"
+    - text: "Hemen enerjik şarkılar bulayım size! (https://listen.fizy.com/en-yeni-listeler/playlist/153779214806/--/detay?Country=TR)"
+    - text: "Güzel! Size mutluluk dolu şarkılar tavsiye ediyorum. (https://listen.fizy.com/en-yeni-listeler/playlist/153779214806/--/detay?Country=TR)"
+    - text: "Harika seçim! Sizi dans ettirecek şarkılar bulayım. (https://listen.fizy.com/en-yeni-listeler/playlist/153779214806/--/detay?Country=TR)"
+    - text: "İyi bir ruh hali için buradayım! Hadi neşeli bir şarkı listesi bulalım. (https://listen.fizy.com/)"
+    - text: "Mükemmel! Size canlandırıcı şarkılar öneriyorum. (https://listen.fizy.com/en-yeni-listeler/playlist/218050226729/--/detay?Country=TR)"
 
   utter_action_happy_mood:
-    - text: "Bunu duyduğuma çok sevindim size hemen güzel ve hareketli şarkılar öneriyorum(https://listen.fizy.com/en-yeni-listeler/playlist/218050226729/--/detay?Country=TR)"
-    - text: "Sizin adınıza çok sevindim, enerji dolu ve modunuzu yükseltecek şakrılar öneriyorum(https://listen.fizy.com/en-yeni-listeler/playlist/153779214806/--/detay?Country=TR)"
+    - text: "Bunu duyduğuma çok sevindim. Size hemen güzel ve hareketli şarkılar öneriyorum. (https://listen.fizy.com/en-yeni-listeler/playlist/218050226729/--/detay?Country=TR)"
+    - text: "Sizin adınıza çok sevindim, enerji dolu ve modunuzu yükseltecek şarkılar öneriyorum. (https://listen.fizy.com/en-yeni-listeler/playlist/153779214806/--/detay?Country=TR)"
 
   utter_action_trip:
-    - text: "Tabii ki size yolda dinlemelik bir playlist önerisi yapıcam"
-    - text: "Bu yolculukta sizin modunuzu yükselticek ve yaşam enerjinizi artırıcak şarkılar önericem"
-    - text: "Tabii ki işte sizin için yolda dinlenmesi gerektiğini düşündüğüm şarkı listem"
+    - text: "Tabii ki size yolda dinlemelik bir playlist önerisi yapacağım."
+    - text: "Bu yolculukta sizin modunuzu yükseltecek ve yaşam enerjinizi artıracak şarkılar önericem."
+    - text: "Tabii ki, işte sizin için yolda dinlenmesi gerektiğini düşündüğüm şarkı listem."
 
   utter_rap_music:
-    - text: "Tabii ki, ama önce hangi tür rap dinlemek istediğinizi öğrenmem gerekir"
+    - text: "Tabii ki, ama önce hangi tür rap dinlemek istediğinizi öğrenmem gerekir."
     - text: "Tabii, hangi tür rap seversiniz? Türkçe rap, Yabancı rap, OldSchool vb."
 
   utter_turkish_rap_music:
-    - text: "Tabii ki, sana Türkçe güzel rapler önericeğim"
-    - text: "Tabii, sana çok sevdiğim bir çalma listesi önericem seviceğini düşünüyorum"
+    - text: "Tabii ki, sana Türkçe güzel rapler öneriyorum."
+    - text: "Tabii, sana çok sevdiğim bir çalma listesi önericem, seveceğini düşünüyorum."
 
   utter_yabanci_rap_music:
-    - text: "Tabii ki, yabancı rap listelerimden birini denemenizi isterim"
+    - text: "Tabii ki, yabancı rap listelerimden birini denemenizi isterim."
     - text: "Tabii, bu yabancı rapler çok iyi dostum."
-    - text: "Beyaz Kanye West olarak sana güzel rapler önercem"
+    - text: "Beyaz Kanye West olarak sana güzel rapler önericem."
 
   utter_oldschool_rap_music:
-    - text: "Tabii ki, zevkli bir adama benziyorsun sana hemen old school bir şeyler önericem"
-    - text: "Tabii, benimde zevkle dinlediğim bir çalma listesini önericem sana"
+    - text: "Tabii ki, zevkli bir adama benziyorsun, sana hemen old school bir şeyler önericem."
+    - text: "Tabii, benim de zevkle dinlediğim bir çalma listesini önericem sana."
 
   utter_play_random_song_fizy:
-    - text: "Tabii ki, size rastgele bir şarkı öneriyorum"
-    - text: "Tabii, işte rastgele bir şarkı"
+    - text: "Tabii ki, size rastgele bir şarkı öneriyorum."
+    - text: "Tabii, işte rastgele bir şarkı."
 
   utter_play_top_charts_fizy:
-    - text: "Tabii ki, fizydeki en popüler şakrılara yönlendiricem sizi"
-    - text: "Tabii, fizy' nin en popüler şakrılarına yönlendiriyorum"
+    - text: "Tabii ki, fizy'deki en popüler şarkılara yönlendiricem sizi."
+    - text: "Tabii, fizy'nin en popüler şarkılarına yönlendiriyorum."
 
 session_config:
   session_expiration_time: 60
